@@ -207,6 +207,71 @@
     background: #FAFAFA;
 }
 
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.img-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.img-slide {
+    min-width: 33.33%;
+    box-sizing: border-box;
+}
+
+.dot-container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    margin: 0 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.black-dot {
+    background: #000;
+}
+
+.dot.active {
+    width: 20px;
+    height: 20px;
+    background-color: #FF3147;
+    background: url(./Assets/Images/active-dot.png);
+    background-size: cover;
+}
+
+.arrow-container {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.arrow {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.arrow.prev {
+    left: 10px;
+}
+
+.arrow.next {
+    right: 10px;
+}
+
 .img-box {
     position: relative;
     width: 370px;
